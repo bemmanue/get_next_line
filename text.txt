@@ -1,0 +1,12 @@
+The main difference with machine learning is that just like statistical models,
+the goal is to understand the structure of the data –
+fit theoretical distributions to the data that are well understood.
+So, with statistical models there is a theory behind the model that is mathematically proven,
+but this requires that data meets certain strong assumptions too.
+Machine learning has developed based on the ability to use computers to probe the data for structure,
+even if we do not have a theory of what that structure looks like.
+The test for a machine learning model is a validation error on new data,
+not a theoretical test that proves a null hypothesis.
+Because machine learning often uses an iterative approach to learn from data,
+the learning can be easily automated.
+Passes are run through the data until a robust pattern is found.
