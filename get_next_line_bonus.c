@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
-static int	check_input(int fd, char **line, char **buf)
+int	check_input(int fd, char **line, char **buf)
 {
 	if (fd < 0 || !line || BUFFER_SIZE <= 0)
 		return (-1);
@@ -25,7 +25,7 @@ static int	check_input(int fd, char **line, char **buf)
 	return (0);
 }
 
-static int	check_remain(char **buf, char **remain, char **line)
+int	check_remain(char **buf, char **remain, char **line)
 {
 	char	*n;
 	char	*temp;
@@ -52,7 +52,7 @@ static int	check_remain(char **buf, char **remain, char **line)
 	return (0);
 }
 
-static int	ft_buffer(char *buf, char **remain, char **line)
+int	ft_buffer(char *buf, char **remain, char **line)
 {
 	char	*temp;
 
